@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário PHP</title>
+    <style>
+        .container{
+            max-width: 450px;
+            border-style: solid;
+            border-color: #cccccc;
+            border-radius: 10px;
+            text-align: center;
+            margin: 150px auto;
+        }
+
+        .container label {
+            display: block;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+        input[type=number] {
+        -moz-appearance: textfield;
+        }
+
+        fieldset{
+            border: 0;
+        }
+    </style>
+</head>
+    <body>
+        <div class="container">
+            <h1>Formulário em PHP</h1>
+
+            <h2>Insira seus dados para se cadastrar no site</h2>
+
+            <form action="insertSQL.php" method="post" class="formzin">
+                <fieldset>
+                    <label for="nome">Nome Completo:</label>   
+                    <input type="text" name="nome" value="" size="30"><br>
+                    <label for="itemcomprado">Item mais Comprado:</label>     
+                    <input type="text" name="itemcomprado" value="" size="30"><br>
+                    <label for="valorcompras">Valor da Compra R$:</label> 
+                    <input type="number" name="valorcompras" value="" size="30"><br>
+                    <label for="anoultimacompra">Ano da Última Compra:</label> 
+                    <input type="number" name="anoultimacompra" size="30"><br>
+
+                    <input type="submit" value="Enviar" class="botao-enviar">
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
